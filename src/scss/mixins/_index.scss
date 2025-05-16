@@ -1,4 +1,4 @@
-@import './flex';
-@import './font-face';
-@import './media';
-@import './burger';
+@forward './font-face';
+@forward './flex';
+@forward './media';
+@forward './burger';
