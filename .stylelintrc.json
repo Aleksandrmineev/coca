@@ -1,5 +1,5 @@
 {
-    "extends": "stylelint-config-standard",
+    "extends": "stylelint-config-standard-scss",
     "plugins": ["stylelint-order"],
     "ignoreFiles": [
         "**/*.js",
@@ -12,6 +12,10 @@
         "color-hex-length": "short",
         "declaration-empty-line-before": "never",
         "media-feature-range-notation": "prefix",
+        "selector-class-pattern": "^[a-z]([a-z0-9]*)(__[a-z0-9]+)?(--[a-z0-9]+)?$",
+        "declaration-block-no-redundant-longhand-properties": null,
+        "declaration-block-single-line-max-declarations": null,
+        "import-notation": "string",
         "order/order": [
             "custom-properties",
             "dollar-variables",
