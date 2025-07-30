@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 import { defineConfig } from 'vite';
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 import injectHTML from 'vite-plugin-html-inject';
@@ -8,7 +7,7 @@ export default defineConfig({
     root: './src',
     server: {
         port: 3000,
-        open: true,
+        // open: true,
         proxy: {
             '/api': {
                 target: 'http://localhost:5000',
@@ -23,7 +22,7 @@ export default defineConfig({
         rollupOptions: {
             input: {
                 main: './src/index.html',
-                about: './src/about.html',
+                // about: './src/about.html',
             },
         },
     },
