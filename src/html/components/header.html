@@ -1,7 +1,10 @@
 <header class="header">
     <h1 class="hidden">Coca Digital Marketing Website. Home Page</h1>
     <div class="container header__container">
-        <a href="/" aria-label="Coca Digital Marketing Home Page"
+        <a
+            href="/"
+            class="header__logo"
+            aria-label="Coca Digital Marketing Home Page"
             ><svg
                 width="140"
                 height="43"
@@ -36,19 +39,32 @@
             <nav class="nav header__nav">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a class="nav__link" href="/">Home</a>
+                        <a class="nav__link text-p-default" href="/">Home</a>
                     </li>
                     <li class="nav__item">
-                        <a class="nav__link" href="/about.html">About</a>
+                        <a class="nav__link text-p-default" href="/about.html"
+                            >About</a
+                        >
                     </li>
                     <li class="nav__item">
-                        <a class="nav__link" href="/blog.html">Blog</a>
+                        <a class="nav__link text-p-default" href="/blog.html"
+                            >Blog</a
+                        >
                     </li>
                     <li class="nav__item">
-                        <a class="nav__link" href="/pricing.html">Pricing</a>
+                        <a class="nav__link text-p-default" href="/pricing.html"
+                            >Pricing</a
+                        >
                     </li>
                 </ul>
             </nav>
+            <label class="header__switcher">
+                <span class="header__switcher-text tex-p-default">Dark</span>
+                <input type="checkbox" class="header__switcher-checkbox" />
+            </label>
         </div>
+        <button class="burger" aria-label="Burger menu">
+            <span class="burger__line"></span>
+        </button>
     </div>
 </header>
